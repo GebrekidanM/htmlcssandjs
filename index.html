@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gebrekidan</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <p><span class="ki">Ki</span><span class="da">da</span><span class="n">n</span></p>
+            <p class="menu-toggle" onclick=toggleOn()>&#9776;</p>
+            <ul>
+                <li><a href="#home">Home</a> </li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile_nav">
+                <span class="x" onclick=toggleOff()>X</span>
+                <ul>
+                    <li><a href="#home" onclick=toggleOff()>Home</a> </li>
+                    <li><a href="#projects" onclick=toggleOff()>Projects</a></li>
+                    <li><a href="#about" onclick=toggleOff()>About</a></li>
+                    <li><a href="#contact" onclick=toggleOff()>Contact</a></li>
+                </ul>
+            </div>
+            
+        </header>
+
+        <!--Home Part-->
+        
+        <section id="home">
+            <p>
+                Hello, I am 
+                <span class="gKidan">Gebrekidan M.,</span>  
+                A fullstak website developmer!
+            </p>
+            <img src="m.png" alt="my pro"/>
+        </section>
+
+        <!--project Part-->
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div>
+                <h3>School Management System</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab libero, quam in similique veritatis consequuntur perferendis quidem quo eveniet sequi! Facilis doloremque consequuntur deserunt inventore nesciunt, facere quia eligendi ut.</p>
+            </div>
+            <div>
+                <h3>Blog Website</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab libero, quam in similique veritatis consequuntur perferendis quidem quo eveniet sequi! Facilis doloremque consequuntur deserunt inventore nesciunt, facere quia eligendi ut.</p>
+            </div>
+            <div>
+                <h3>Ecommerce Website</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab libero, quam in similique veritatis consequuntur perferendis quidem quo eveniet sequi! Facilis doloremque consequuntur deserunt inventore nesciunt, facere quia eligendi ut.</p>
+            </div>
+        </section>
+
+        <!--about Part-->
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea iste perferendis obcaecati sint! Deserunt vitae aperiam facere perferendis voluptate! Eum, iure deleniti ipsum deserunt ullam atque consequatur ab omnis! Minus.</p>
+
+        </section>
+
+        <!--contact Part-->
+
+        <section id="contact">
+            <h2>Contact me</h2>
+            <form>
+                <label>Username:</label>
+                <input type="text">
+                <label>Email:</label>
+                <input type="email">
+                <label>Message:</label>
+                <textarea rows="5"></textarea>
+                <input type="button" value="Send" class="button">
+            </form>
+        </section>
+
+        <!--footer Part-->
+
+        <footer>
+            <p>&copy;All reight is conserved! Nitsuh Design</p>
+        </footer>
+
+
+        <!-- JavaScript -->
+         <script>
+            
+            function toggleOn() {
+                const mobile_nav = document.querySelector('.mobile_nav')
+                mobile_nav.style.display = 'flex'
+            }
+            function toggleOff() {
+                const mobile_nav = document.querySelector('.mobile_nav')
+                mobile_nav.style.display = 'none'
+            }
+         </script>
+    </body>
+</html>
